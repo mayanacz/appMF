@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Adicionar Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="sm">addUsuario</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
+
+<ion-content id="container">
+  <ion-item>
+    <ion-label position="floating">Id. Usuario</ion-label>
+    <ion-input placeholder="---"[(ngModel)]="idusuario"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Nome</ion-label>
+    <ion-input placeholder="nome"[(ngModel)]="nome"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>CPF</ion-label>
+    <ion-input placeholder="cpf"[(ngModel)]="cpf"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>E-mail</ion-label>
+    <ion-input placeholder="email" [(ngModel)]="email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Contato</ion-label>
+    <ion-input placeholder="contato" [(ngModel)]="contato"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Senha</ion-label>
+    <ion-input placeholder="senha"[(ngModel)]="senha"></ion-input>
+  </ion-item>
+
+  <div class="botao">
+    <ion-button color="success" size="large" shape="round" (click)="cadastrar()">Salvar</ion-button>
+  </div>
+</ion-content>

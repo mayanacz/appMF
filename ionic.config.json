@@ -1,0 +1,7 @@
+{
+  "name": "marmitaFit",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
